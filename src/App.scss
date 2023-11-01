@@ -1,5 +1,8 @@
 .App {
   text-align: left;
+  background: black;
+  height: 100vh;
+  width: 100vw;
 }
 
 *{
@@ -67,16 +70,13 @@
   color: white;
   font-weight: 600;
   font-size: smaller;
-  padding-left: 5%;
-  padding-right: 5%;
+
   
 }
 
 .SignIn:hover {
-  /* Reset or override the hover styles here */
-  background-color: rgb(213, 44, 52); /* Change this to your desired style */
-  color: white; /* Change this to your desired text color */
-  /* Add any other styles you want to reset */
+  background-color: rgb(213, 44, 52);
+  color: white; 
 }
 
 
@@ -101,11 +101,55 @@
 }
 
 .ColorShade{
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0, rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0.9) 100%);
   position: absolute;
   top: 0cm;
   width: 100%;
   height: 100%;
   z-index: 2;
 }
+
+.WelcomeDiv{
+  z-index: 3;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  top: 35%;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.Wlc{
+  display: block;
+  font-size: 150%;
+  
+}
+
+.Text{
+  display: block;
+  font-size: 300%;
+  font-weight: 600;
+}
+
+.Member{
+  display: block;
+  background: rgb(213, 44, 52);
+  transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+  min-width: 50%;
+  margin-top: 2%;
+  color: white;
+  font-weight: 600;
+  font-size: large;
+}
+
+.Member:hover {
+  background: rgb(213, 44, 52);
+}
+
+
+
+
+
 
